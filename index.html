@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">PASSWORD GENERATOR</h1>
+
+        <!--       -->
+
+        <div class="pass-div">
+            <input readonly type="text" placeholder="PASSWORD" data-passwordDisplay class="pas">
+            <!-- copy -->
+            <button data-copy-btn class="cpy">
+                <i class="fa-solid fa-copy"></i>
+              <span data-copyMsg></span>
+            </button>
+        </div>
+
+        <!--       -->
+
+        <div class="input-container">
+            <div class="a">
+                <p>Password length</p>
+                <p class="passlength" >0</p>
+            </div>
+              <!-- slider -->
+                <input type="range" min="1" max="20" step="1" slider class="sly"/>
+            
+       <!-- boxes -->
+            <div class="box1">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include Uppercase Latters</label>
+            </div>
+            <div class="box1">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include Lowercase Latters</label>
+            </div>
+            <div class="box1">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="box1">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Include Symbols</label>
+            </div>
+
+            <!-- strenth  -->
+
+            <div class="strenth-container">
+                <p>Strenth</p>
+                <div data-indicator class="b"></div>
+            </div>
+
+            <button class="generate-button">GENERATE PASSWORD</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d083298ce1.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
